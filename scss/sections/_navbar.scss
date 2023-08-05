@@ -1,0 +1,16 @@
+@use "../custom" as *;
+
+.header_area{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40px;
+  .navbar{
+    a{
+      img{
+        width: 86px;
+        height: 85px;
+      }
+    }
+  }
+}

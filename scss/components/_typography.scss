@@ -1,0 +1,60 @@
+@use '../custom' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: 'Niladri Rongtuli';
+  src: url('../../assets/fonts/LiNiladriRongtuliUnicode.woff') format('woff2'),
+      url('../../assets/fonts/LiNiladriRongtuliUnicode.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ador Noirrit';
+  src: url('../../assets/fonts/LiAdorNoirrit.woff2') format('woff2'),
+      url('../../assets/fonts/LiAdorNoirrit.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 26px;
+}
+
+
+$headings: (h1, 40px, 48px, 700), (h2, 32px, 38px, 700), (h3, 28px, 32px, 600), (h4, 24px, 28px, 500), (h5, 20px, 24px, 500), (h6, 16px, 22px, 400), (p, 14px, 1.8, 500);
+@each $title, $font_size, $line_height, $font_weight in $headings{
+  #{$title}{
+    font-size: $font_size;
+    line-height: $line_height;
+    font-weight: $font_weight;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Niladri Rongtuli';
+  color: $secondary
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
