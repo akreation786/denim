@@ -1,2 +1,44 @@
 @use "../custom" as *;
 
+
+.btn {
+  position: relative;
+  box-shadow: 0 2px 10px transparent, 0 3px 6px transparent;
+  margin-top: 15px;
+  text-transform: capitalize;
+  font-weight: 300;
+  transition: all .3s;
+
+  &:before {
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: $primary;
+    z-index: -2;
+  }
+
+  &:hover {
+    &:before {
+      -webkit-transition: 0.5s all ease;
+      transition: 0.5s all ease;
+      left: 0;
+      right: 0;
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    &:before {
+      transition: 0.5s all ease;
+      left: 0;
+      right: 0;
+      opacity: 1;
+    }
+  }
+}

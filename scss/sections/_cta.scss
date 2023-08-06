@@ -1,0 +1,77 @@
+@use "../custom" as *;
+@use "../abstracts/mixins" as *;
+
+
+.cta_area {
+  @include bg-primary;
+  margin-top: -280px;
+  padding-top: 80px;
+
+  .cta {
+    height: 100%;
+    height: 1145px;
+
+    .product_size_title {
+      h3 {
+        color: $accent;
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+    }
+
+    .product_size {
+      .single_product_size {
+        display: inline-block;
+        background: url("../../assets/images/size_shape.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-right: 20px;
+
+        h3 {
+          color: $secondary;
+          font-size: 44px;
+          font-weight: 400;
+          line-height: 80px;
+          background: #fff;
+          width: 80px;
+          height: 80px;
+          border-radius: 50px;
+          text-align: center;
+          margin: 12px;
+        }
+      }
+    }
+
+    .cta_gap {
+      min-height: 598px;
+    }
+
+    .sell_button {
+      text-align: center;
+
+      h4 {
+        font-family: 'Li Sheikh Hasina 2';
+        color: #FFF;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+
+      button {
+        font-family: 'Niladri Rongtuli';
+        background: $accent;
+        color: $primary;
+        padding: 18px 45px;
+        border-radius: 38px 0px 38px 0px;
+        font-size: 25px;
+        font-weight: 400;
+
+        img {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+}

@@ -11854,6 +11854,41 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.btn {
+  position: relative;
+  box-shadow: 0 2px 10px transparent, 0 3px 6px transparent;
+  margin-top: 15px;
+  text-transform: capitalize;
+  font-weight: 300;
+  transition: all 0.3s;
+}
+.btn:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #003B60;
+  z-index: -2;
+}
+.btn:hover:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.btn:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
 @font-face {
   font-family: "Niladri Rongtuli";
   src: url("../../assets/fonts/LiNiladriRongtuliUnicode.woff") format("woff2"), url("../../assets/fonts/LiNiladriRongtuliUnicode.woff2") format("woff");
@@ -11862,8 +11897,15 @@ textarea.form-control-lg {
   font-display: swap;
 }
 @font-face {
-  font-family: "Ador Noirrit";
+  font-family: "Li Ador Noirrit";
   src: url("../../assets/fonts/LiAdorNoirrit.woff2") format("woff2"), url("../../assets/fonts/LiAdorNoirrit.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Li Sheikh Hasina 2";
+  src: url("../../assets/fonts/LiSheikhHasina2Unicode.woff2") format("woff2"), url("../../assets/fonts/LiSheikhHasina2Unicode.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11942,15 +11984,518 @@ h6 a {
   position: absolute;
   left: 0;
   right: 0;
-  top: 40px;
+  top: 30px;
+  margin-bottom: 58px;
+}
+.header_area .navbar a {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #003B60;
+}
+.header_area .navbar a span {
+  color: #F0E615;
+  margin-left: 5px;
 }
 .header_area .navbar a img {
   width: 86px;
   height: 85px;
+  margin-right: 8px;
 }
 
 .intro_area {
   height: 940px;
+}
+.intro_area .intro {
+  margin-top: 57px;
+}
+.intro_area .intro .intro_left > span {
+  font-family: "Li Ador Noirrit";
+  font-size: 24px;
+  line-height: 1.2;
+  background: #003B60;
+  padding: 10px 29px;
+  border-radius: 38px 0px;
+  color: #fff;
+}
+.intro_area .intro .intro_left h2 {
+  color: #003B60;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 42px 0;
+}
+.intro_area .intro .intro_left .intro_price h4 {
+  font-family: "Li Ador Noirrit";
+  font-size: 24px;
+  line-height: 1.2;
+  color: #012A4A;
+}
+.intro_area .intro .intro_left .intro_price div span {
+  font-family: "Li Ador Noirrit";
+  font-size: 24px;
+  line-height: 1.2;
+  color: #608AAB;
+  text-decoration: line-through;
+}
+.intro_area .intro .intro_left .intro_price div p {
+  font-family: "Niladri Rongtuli";
+  font-size: 56px;
+  line-height: 1.2;
+  color: #012A4A;
+  margin-left: 28px;
+  margin-bottom: 0;
+}
+.intro_area .intro .intro_left button {
+  font-family: "Niladri Rongtuli";
+  background: #F0E615;
+  color: #003B60;
+  padding: 18px 45px;
+  border-radius: 38px 0px 38px 0px;
+  font-size: 25px;
+  font-weight: 400;
+}
+.intro_area .intro .intro_left button img {
+  margin-left: 16px;
+}
+.intro_area .intro .intro_left h3 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #012A4A;
+  font-family: "Li Ador Noirrit";
+  line-height: 1.5;
+  margin-top: 65px;
+}
+.intro_area .intro .intro_right .intro_img {
+  background: url(../../assets/images/intro-img-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+.intro_area .intro .intro_right .intro_img > img {
+  max-width: 663px;
+  max-height: 652px;
+  padding-top: 140px;
+  padding-right: 0;
+  padding-left: 30px;
+  padding-bottom: 0px;
+}
+.intro_area .intro .intro_right .intro_right_phone {
+  text-align: center;
+}
+.intro_area .intro .intro_right .intro_right_phone button {
+  font-family: "Niladri Rongtuli";
+  background: #F0E615;
+  color: #003B60;
+  padding: 12px 32px;
+  border-radius: 38px 0px 38px 0px;
+  font-weight: 300;
+  font-size: 50px;
+  margin-top: 0;
+}
+.intro_area .intro .intro_right .intro_right_phone button img {
+  margin-right: 16px;
+}
+.intro_area .intro .intro_right .intro_right_phone p {
+  font-family: "Li Ador Noirrit";
+  font-size: 33px;
+  line-height: 1.2;
+  background: #003B60;
+  padding: 20px 30px;
+  border-radius: 38px 0px;
+  color: #fff;
+  display: inline-block;
+  margin-left: -150px;
+}
+
+.about_area {
+  padding-top: 90px;
+}
+.about_area .about_top_text {
+  margin-bottom: 55px;
+}
+.about_area .about_top_text p {
+  color: #003B60;
+  font-family: "Li Ador Noirrit";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.about_area .about_left {
+  position: relative;
+  z-index: 3;
+}
+.about_area .about_left img {
+  width: 100%;
+}
+.about_area .about_right h3 {
+  font-size: 44px;
+  font-weight: 400;
+  color: #003B60;
+  line-height: 1.5;
+}
+.about_area .about_right .desc_list_left p {
+  color: #003B60;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.about_area .about_right .desc_list_left p img {
+  margin-right: 12px;
+}
+.about_area .about_right .desc_list_right p {
+  color: #003B60;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.about_area .about_right .desc_list_right p img {
+  margin-right: 16px;
+}
+
+.cta_area {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  margin-top: -280px;
+  padding-top: 80px;
+}
+.cta_area:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #0E161F 0%, rgba(14, 22, 31, 0) 52.08%, rgba(14, 22, 31, 0.96) 100%);
+  opacity: 0.65;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+.cta_area .cta {
+  height: 100%;
+  height: 1145px;
+}
+.cta_area .cta .product_size_title h3 {
+  color: #F0E615;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.cta_area .cta .product_size .single_product_size {
+  display: inline-block;
+  background: url("../../assets/images/size_shape.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 20px;
+}
+.cta_area .cta .product_size .single_product_size h3 {
+  color: #012A4A;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 80px;
+  background: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  text-align: center;
+  margin: 12px;
+}
+.cta_area .cta .cta_gap {
+  min-height: 598px;
+}
+.cta_area .cta .sell_button {
+  text-align: center;
+}
+.cta_area .cta .sell_button h4 {
+  font-family: "Li Sheikh Hasina 2";
+  color: #FFF;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.cta_area .cta .sell_button button {
+  font-family: "Niladri Rongtuli";
+  background: #F0E615;
+  color: #003B60;
+  padding: 18px 45px;
+  border-radius: 38px 0px 38px 0px;
+  font-size: 25px;
+  font-weight: 400;
+}
+.cta_area .cta .sell_button button img {
+  margin-left: 16px;
+}
+
+.products_area {
+  background: #F0F9FF;
+  padding: 80px 0px;
+}
+.products_area .single_product {
+  background: #fff;
+  text-align: center;
+  border-radius: 86px 0px 86px 0px;
+}
+.products_area .single_product img {
+  padding: 28px 20px 0px 20px;
+  width: 100%;
+}
+.products_area .single_product button {
+  font-family: "Li Ador Noirrit";
+  background: #003B60;
+  padding: 18px 32px;
+  border-radius: 48px 0px 48px 0px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 28px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.featured_area {
+  background: #F0F9FF;
+  padding-bottom: 280px;
+}
+.featured_area h3 {
+  padding: 60px 0px;
+  border-top: 1px dashed #003B60;
+  font-size: 44px;
+  line-height: 1.5;
+}
+.featured_area .featured_list .featured_list_left p {
+  color: #003B60;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.featured_area .featured_list .featured_list_left p img {
+  margin-right: 12px;
+}
+.featured_area .featured_list .featured_list_right p {
+  color: #003B60;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.featured_area .featured_list .featured_list_right p img {
+  margin-right: 16px;
+}
+
+.video_area .video {
+  height: 788px;
+  width: auto;
+  margin: 0 50px;
+  margin-top: -270px;
+  background-position: center !important;
+  background-size: cover !important;
+  position: relative;
+  z-index: 2;
+}
+.video_area .video:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 59, 96, 0.59);
+  backdrop-filter: blur(5px);
+  opacity: 0.65;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+.video_area .video:before {
+  z-index: 0;
+  backdrop-filter: none;
+  opacity: none;
+  border-radius: 114px 0px;
+}
+.video_area .video::after {
+  position: absolute;
+  content: url(../../assets/images/play_button.svg);
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  margin-left: -46px;
+  margin-top: -46px;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  border: 18px solid rgba(236, 236, 236, 0.7411764706);
+}
+.video_area .video:hover::after {
+  border: 18px solid rgba(236, 236, 236, 0.0156862745);
+  transition-duration: 1000ms;
+  transition-property: all;
+}
+.video_area .video img {
+  width: 100%;
+  border-radius: 114px 0px;
+}
+
+.delivery_area .section_title {
+  padding: 80px 0px;
+}
+.delivery_area .section_title h3 {
+  color: #003B60;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.delivery_area .section_title span {
+  color: #003B60;
+  font-family: "Li Ador Noirrit";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  border: 1px solid #003B60;
+  padding: 20px 65px;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.delivery_area .delivery_order {
+  background-position: center !important;
+  background-size: cover !important;
+  position: relative;
+  z-index: 2;
+  width: 900px;
+  height: 698px;
+  background: url("../../assets/images/delivery.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex-direction: column;
+}
+.delivery_area .delivery_order:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 59, 96, 0.59);
+  backdrop-filter: blur(5px);
+  opacity: 0.65;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+.delivery_area .delivery_order::before {
+  border-radius: 120px 0px;
+}
+.delivery_area .delivery_order h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 51px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.delivery_area .delivery_order p {
+  color: #fff;
+  text-align: center;
+  font-family: "Li Ador Noirrit";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.delivery_area .delivery_order button {
+  font-family: "Niladri Rongtuli";
+  background: #F0E615;
+  color: #003B60;
+  padding: 12px 32px;
+  border-radius: 38px 0px 38px 0px;
+  font-weight: 300;
+  font-size: 50px;
+  margin-top: 0;
+}
+.delivery_area .delivery_order button img {
+  margin-right: 16px;
+}
+
+.testimonial_area {
+  background: #F0F9FF;
+  padding-top: 470px;
+  margin-top: -390px;
+}
+.testimonial_area .testimonial_slider .single_testimonial {
+  background: #c94343;
+  border-radius: 45px 0px;
+  margin: 0px 30px;
+}
+.testimonial_area .testimonial_slider .single_testimonial img {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+}
+.testimonial_area .testimonial_slider .single_testimonial .testimonial_content h4 {
+  color: #003B60;
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.testimonial_area .testimonial_slider .single_testimonial .testimonial_content h5 {
+  color: #003B60;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.testimonial_area .testimonial_slider .single_testimonial .testimonial_content p {
+  color: #003B60;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.testimonial_area .testimonial_slider .prev_arrow {
+  width: 57px;
+  height: 57px;
+  display: block;
+  background: transparent;
+  text-align: center;
+  line-height: 57px;
+  font-size: 24px;
+  border-radius: 50%;
+  position: absolute;
+  right: 50%;
+  margin-left: -67px;
+  bottom: -57px;
+  border: 1px solid #262F30;
+  color: #003B60;
+  transition-duration: 1000ms;
+  transition-property: all;
+}
+.testimonial_area .testimonial_slider .prev_arrow:hover {
+  background: #003B60;
+  color: #fff;
+}
+.testimonial_area .testimonial_slider .next_arrow {
+  width: 57px;
+  height: 57px;
+  display: block;
+  background: transparent;
+  text-align: center;
+  line-height: 57px;
+  font-size: 24px;
+  border-radius: 50%;
+  position: absolute;
+  right: 50%;
+  margin-right: -67px;
+  border: 1px solid #262F30;
+  color: #003B60;
+  transition-duration: 1000ms;
+  transition-property: all;
+}
+.testimonial_area .testimonial_slider .next_arrow:hover {
+  background: #003B60;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -20,12 +20,13 @@
   background-size: cover !important;
   position: relative;
   z-index: 2;
+
   &:before {
     position: absolute;
     content: "";
     width: 100%;
     height: 100%;
-    background: rgba(34, 35, 39, 0.75);
+    background: rgba(0, 59, 96, 0.59);
     backdrop-filter: blur(5px);
     opacity: 0.65;
     z-index: -1;
@@ -39,23 +40,26 @@
   background-size: cover;
   position: relative;
   z-index: 2;
+
   &:before {
     position: absolute;
     content: "";
     width: 100%;
     height: 100%;
-    background-color: $primary;
+    background: linear-gradient(180deg, #0E161F 0%, rgba(14, 22, 31, 0.00) 52.08%, rgba(14, 22, 31, 0.96) 100%);
     opacity: 0.65;
     z-index: -1;
     left: 0;
     top: 0;
   }
 }
+
 @mixin bg-secondary {
   background-position: center;
   background-size: cover;
   position: relative;
   z-index: 2;
+
   &:before {
     position: absolute;
     content: "";

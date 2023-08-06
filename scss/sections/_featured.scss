@@ -1,0 +1,48 @@
+@use "../custom" as *;
+@use "../abstracts/mixins" as *;
+
+
+
+.featured_area {
+  background: #F0F9FF;
+  padding-bottom: 280px;
+
+  h3 {
+    padding: 60px 0px;
+    border-top: 1px dashed $primary;
+    font-size: 44px;
+    line-height: 1.5;
+  }
+
+  .featured_list {
+    .featured_list_left {
+      p {
+        color: $primary;
+        font-family: 'Manrope', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.5;
+
+        img {
+          margin-right: 12px;
+
+        }
+      }
+    }
+
+    .featured_list_right {
+      p {
+        color: $primary;
+        font-family: 'Manrope', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.5;
+
+        img {
+          margin-right: 16px;
+
+        }
+      }
+    }
+  }
+}

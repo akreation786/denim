@@ -4,8 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Denim Pants</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font awesome CSS -->
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+  <!-- Slick Slider CSS -->
+  <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css" />
   <!-- Style CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -14,7 +18,7 @@
   <div class="container">
     <div class="row">
       <nav class="navbar navbar-light bg-light bg-transparent">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="#">
           <img src="assets/images/logo-shape.png" width="30" height="30" class="d-inline-block align-top" alt="">
           Jeans <span>Pants</span>
         </a>
@@ -25,21 +29,276 @@
 <!-- ******************** Header Area End ******************** -->
 
 <!-- ******************** Intro Area Start  ******************** -->
-<section id="intro" class="intro_area"
+<section id="intro" class="intro_area d-flex align-items-center"
   style="background:url(assets/images/Intro_bg.jpg) no-repeat center center / 100% 100%">
   <div class="container">
-    <div class="row">
-      <div class="col-xl-6">
-        <h2>স্টাইলিশ ন্যারো ফিটিং সেমি স্টিচড ডেনিম জিন্স প্যান্ট.</h2>
+    <div class="intro">
+      <div class="row ">
+        <div class="col-xl-6 d-flex align-items-center">
+          <div class="intro_left">
+            <span>পুরুষ এবং মহিলাদের জন্য ডেনিম জিন্স</span>
+            <h2>স্টাইলিশ ন্যারো ফিটিং সেমি স্টিচড ডেনিম জিন্স প্যান্ট.</h2>
+            <div class="intro_price">
+              <h4>সর্বমোট মূল্য:</h4>
+              <div class="d-flex align-items-center">
+                <span>৳ 750.00</span>
+                <p>৳ 550.00</p>
+              </div>
+            </div>
+            <button class="btn btn_main">অর্ডার করুন<img src="assets/images/arrow_right.svg" alt=""></button>
+            <h3>ঢাকার বাহিরে থেকে অর্ডার করতে চাইলে ১৫০ টাকা অগ্রিম ডেলিভারি পরিশোধ করুন</h3>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="intro_right">
+            <div class="intro_img">
+              <img src="assets/images/intro_img.png" alt="">
+            </div>
+            <div class="intro_right_phone">
+              <button class="btn btn_main"><img src="assets/images/phone.svg" alt="">01894844452</button>
+              <p>সরাসরি কিনতে ফোন করুন</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-xl-6"></div>
     </div>
   </div>
 </section>
+<!-- ******************** Intro Area End  ******************** -->
+<!-- ******************** About Area Start  ******************** -->
+<section id="about" class="about_area d-flex align-items-center">
+  <div class="container">
+    <div class="about_top_text">
+      <p>আমাদের এই ডেনিম ফেব্রিক ১০০% কটন টুইল বা স্টেচ টুইল দিয়ে তৈরি হয়। এই ফেব্রিক দিয়ে তৈরি হয় শার্ট, জিন্স, ব্যাগ,
+        জ্যাকেটসহ আরও অনেক কিছু। নিয়মিত ব্যবহারের জন্য জিন্স প্যান্টের কোনো তুলনা হয় না। জিন্স তৈরিতে ব্যবহার করা হয়
+        ডেনিম কটন যা সম্পূর্ণ সুতি। ছেলেদের জিন্স প্যান্টের দাম ও ডিজাইন দেখে কিনুন বাংলাদেশের অন্যতম সেরা অনলাইন শপ
+        অফুরন্ত থেকে।</p>
+    </div>
+    <div class="row">
+      <div class="col-xl-5">
+        <div class="about_left">
+          <img src="assets/images/about_img.png" alt="">
+        </div>
+      </div>
+      <div class="col-xl-7">
+        <div class="about_right">
+          <h3>আমাদের ডেনিম জিন্স প্যান্ট প্রোডাক্টের বিবরণ</h3>
+          <div class="desc_list d-flex bd-highlight">
+            <div class="desc_list_left flex-fill">
+              <p><img src="assets/images/list_icon.svg" alt="">Men's Denim Pant.</p>
+              <p><img src="assets/images/list_icon.svg" alt="">Size- 30/32/34/36</p>
+              <p><img src="assets/images/list_icon.svg" alt="">Spandax- 2%</p>
+              <p><img src="assets/images/list_icon.svg" alt="">Fabrics- Denim</p>
+            </div>
+            <div class="desc_list_right flex-fill">
+              <p><img src="assets/images/list_icon.svg" alt="">Style- Narrow Slim Fit</p>
+              <p><img src="assets/images/list_icon.svg" alt="">Very Comfortable to Wear.</p>
+              <p><img src="assets/images/list_icon.svg" alt="">Nice Stylish Narrow Slim Fit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ******************** About Area End  ******************** -->
+<!-- ******************** Call to Action Area Start  ******************** -->
+<section id="cta" class="cta_area d-flex align-content-between flex-wrap"
+  style="background:url(assets/images/denim-bg.jpg) no-repeat center center / 100% 100%">
+  <div class="container">
+    <div class="cta">
+      <div class="row">
+        <div class="col-xl-7 offset-xl-5">
+          <div class="product_size_title">
+            <h3>ডেনিম ফেব্রিক জিন্স সাইজ</h3>
+          </div>
+          <div class="product_size">
+            <div class="single_product_size">
+              <h3>৩০</h3>
+            </div>
+            <div class="single_product_size">
+              <h3>৩২</h3>
+            </div>
+            <div class="single_product_size">
+              <h3>৩৪
+              </h3>
+            </div>
+            <div class="single_product_size">
+              <h3>৩৬</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cta_gap"></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-7">
+          <div class="sell_button">
+            <h4>সবচেয়ে চেয়ে কম দামে আমাদের
+              থেকে কিনুন।</h4>
+            <button class="btn btn_main">অর্ডার করুন<img src="assets/images/arrow_right.svg" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ******************** Call to Action Area End   ******************** -->
+<!-- ******************** Product Area Start   ******************** -->
+<section id="products" class="products_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-3">
+        <div class="single_product">
+          <img src="assets/images/demin1.png" alt="product">
+          <button class="btn btn_main">মেনস ডেনিম জিন্স প্যান্ট</button>
+        </div>
+      </div>
+      <div class="col-xl-3">
+        <div class="single_product">
+          <img src="assets/images/demin2.png" alt="product">
+          <button class="btn btn_main">মেনস ডেনিম জিন্স প্যান্ট</button>
+        </div>
+      </div>
+      <div class="col-xl-3">
+        <div class="single_product">
+          <img src="assets/images/demin3.png" alt="product">
+          <button class="btn btn_main">মেনস ডেনিম জিন্স প্যান্ট</button>
+        </div>
+      </div>
+      <div class="col-xl-3">
+        <div class="single_product">
+          <img src="assets/images/denim4.png" alt="product">
+          <button class="btn btn_main">মেনস ডেনিম জিন্স প্যান্ট</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ******************** Product Area End   ******************** -->
+<!-- ******************** featured Area End   ******************** -->
+<section id="featured" class="featured_area">
+  <div class="container">
+    <div class="featured_title">
+      <h3 class="text-center">আমাদের ডেনিম ও জিন্সের কিছু বৈশিষ্ট্য</h3>
+      <div class="featured_list d-flex bd-highlight">
+        <div class="featured_list_left flex-fill">
+          <p><img src="assets/images/list_icon.svg" alt="">ডেনিম ফেব্রিক ১০০% কটন টুইল বা স্টেচ টুইল দিয়ে তৈরি হয়।</p>
+          <p><img src="assets/images/list_icon.svg" alt="">ডেনিম ফেব্রিক দিয়ে তৈরি পোশাক অনেকদিন ব্যবহার করা যায়।</p>
+          <p><img src="assets/images/list_icon.svg" alt="">দীর্ঘদিন ব্যবহার করা যায়।</p>
+        </div>
+        <div class="featured_list_right flex-fill">
+          <p><img src="assets/images/list_icon.svg" alt="">সহজে ভাঁজ পড়ে না। ফলে আয়রনের ঝামেলা ছাড়াই পরা যায়।</p>
+          <p><img src="assets/images/list_icon.svg" alt="">জিন্স বারবার ধোয়ার প্রয়োজন হয় না।</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ******************** featured Area End   ******************** -->
+<!-- ******************** Video Area Start   ******************** -->
+<section id="video" class="video_area">
+  <div class="row">
+    <div class="col-xxl-12">
+      <div class="video d-flex justify-content-center">
+        <img src="assets/images/video-bg.png" alt="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+          <g opacity="0.42" filter="url(#filter0_b_1_672)">
+            <circle cx="64" cy="64" r="64" fill="#ECECEC" />
+          </g>
+          <defs>
+            <filter id="filter0_b_1_672" x="-73" y="-73" width="274" height="274" filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feGaussianBlur in="BackgroundImageFix" stdDeviation="36.5" />
+              <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_672" />
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_672" result="shape" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ******************** Video Area End   ******************** -->
+<!-- ******************** Delivery Area Start   ******************** -->
+<section id="delivery" class="delivery_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-10 offset-xl-1">
+        <div class="section_title text-center">
+          <h3>লেনদেনকালে কিভাবে নিরাপদ থাকবেন তার কিছু নির্দেশনাবলী</h3>
+          <span>প্রোডাক্টটি ভালোভাবে যাচাই করে নিন এবং পুরোপুরি সন্তুষ্ট হলে তারপর দাম পরিশোধ করুন।</span>
+          <span>প্রোডাক্ট ও অর্থ দুটোই একই সময় লেনদেন করুন</span>
+        </div>
+      </div>
+    </div>
+    <div class="row g-xl-0">
+      <div class="col-xl-8 offset-2">
+        <div class="delivery_order d-flex align-items-center justify-content-center">
+          <h3>মুল্য-550.00 টাকা</h3>
+          <p>সারা দেশে ফ্রি হোম ডেলিভারি</p>
+          <button class="btn btn_main">অর্ডার করুন<img src="assets/images/arrow_right.svg" alt=""></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ******************** Delivery Area End   ******************** -->
+<!-- ******************** Testimonial Area Start   ******************** -->
+<section id="testimonal" class="testimonial_area">
+  <div class="container">
+    <div class="row">
+      <div class="testimonial_slider text-center">
+        <div class="single_testimonial">
+          <img src="assets/images/testimonial1.jpg" alt="">
+          <div class="testimonial_content">
+            <h4>Jacob Jones</h4>
+            <h5>Buffalo, NJ</h5>
+            <p>Sociable on as carriage my position weddings raillery consider. Peculiar trifling absolute and
+              wandered.</p>
+          </div>
+        </div>
+        <div class="single_testimonial">
+          <img src="assets/images/testimonial1.jpg" alt="">
+          <div class="testimonial_content">
+            <h4>Jacob Jones</h4>
+            <h5>Buffalo, NJ</h5>
+            <p>Sociable on as carriage my position weddings raillery consider. Peculiar trifling absolute and
+              wandered.</p>
+          </div>
+        </div>
+        <div class="single_testimonial">
+          <img src="assets/images/testimonial1.jpg" alt="">
+          <div class="testimonial_content">
+            <h4>Jacob Jones</h4>
+            <h5>Buffalo, NJ</h5>
+            <p>Sociable on as carriage my position weddings raillery consider. Peculiar trifling absolute and
+              wandered.</p>
+          </div>
+        </div>
+        <div class="single_testimonial">
+          <img src="assets/images/testimonial1.jpg" alt="">
+          <div class="testimonial_content">
+            <h4>Jacob Jones</h4>
+            <h5>Buffalo, NJ</h5>
+            <p>Sociable on as carriage my position weddings raillery consider. Peculiar trifling absolute and
+              wandered.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ******************** Testimonial Area End   ******************** -->
 
 <body>
 
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

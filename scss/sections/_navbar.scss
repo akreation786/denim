@@ -1,15 +1,28 @@
 @use "../custom" as *;
 
-.header_area{
+.header_area {
   position: absolute;
   left: 0;
   right: 0;
-  top: 40px;
-  .navbar{
-    a{
-      img{
+  top: 30px;
+  margin-bottom: 58px;
+
+  .navbar {
+    a {
+      font-size: 24px;
+      text-transform: capitalize;
+      font-weight: 700;
+      color: $primary;
+
+      span {
+        color: $accent;
+        margin-left: 5px;
+      }
+
+      img {
         width: 86px;
         height: 85px;
+        margin-right: 8px;
       }
     }
   }

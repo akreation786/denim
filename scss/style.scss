@@ -1,5 +1,3 @@
-
-
 @use 'custom';
 
 //IMPORT THE COMPONENTS
@@ -9,4 +7,10 @@
 //IMPORT THE SECTIONS
 @use 'sections/navbar';
 @use 'sections/intro';
-
+@use 'sections/about';
+@use 'sections/cta';
+@use 'sections/product';
+@use 'sections/featured';
+@use 'sections/video';
+@use 'sections/delivery';
+@use 'sections/testimonial';

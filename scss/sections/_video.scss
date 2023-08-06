@@ -1,0 +1,46 @@
+@use "../custom" as *;
+@use "../abstracts/mixins" as *;
+
+.video_area {
+  .video {
+    height: 788px;
+    width: auto;
+    margin: 0 50px;
+    margin-top: -270px;
+
+    @include bg;
+
+    &:before {
+      z-index: 0;
+      backdrop-filter: none;
+      opacity: none;
+      border-radius: 114px 0px;
+    }
+
+    &::after {
+      position: absolute;
+      content: url(../../assets/images/play_button.svg);
+      z-index: 0;
+      left: 50%;
+      top: 50%;
+      margin-left: -46px;
+      margin-top: -46px;
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      border: 18px solid#ecececbd;
+    }
+
+    &:hover {
+      &::after {
+        border: 18px solid#ececec04;
+        @include dTransitionProperty;
+      }
+    }
+
+    img {
+      width: 100%;
+      border-radius: 114px 0px;
+    }
+  }
+}
