@@ -199,24 +199,12 @@
 <!-- ******************** featured Area End   ******************** -->
 <!-- ******************** Video Area Start   ******************** -->
 <section id="video" class="video_area">
-  <div class="row">
-    <div class="col-xxl-12">
-      <div class="video d-flex justify-content-center">
-        <img src="assets/images/video-bg.png" alt="">
-        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-          <g opacity="0.42" filter="url(#filter0_b_1_672)">
-            <circle cx="64" cy="64" r="64" fill="#ECECEC" />
-          </g>
-          <defs>
-            <filter id="filter0_b_1_672" x="-73" y="-73" width="274" height="274" filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feGaussianBlur in="BackgroundImageFix" stdDeviation="36.5" />
-              <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_672" />
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_672" result="shape" />
-            </filter>
-          </defs>
-        </svg>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="video d-flex justify-content-center">
+          <img src="assets/images/video-bg.png" alt="">
+        </div>
       </div>
     </div>
   </div>
@@ -235,7 +223,7 @@
       </div>
     </div>
     <div class="row g-xl-0">
-      <div class="col-xl-8 offset-2">
+      <div class="col-xl-10 offset-1">
         <div class="delivery_order d-flex align-items-center justify-content-center">
           <h3>মুল্য-550.00 টাকা</h3>
           <p>সারা দেশে ফ্রি হোম ডেলিভারি</p>
@@ -252,7 +240,7 @@
     <div class="row">
       <div class="testimonial_slider text-center">
         <div class="single_testimonial">
-          <img src="assets/images/testimonial1.jpg" alt="">
+          <img src="assets/images/t2.png" alt="">
           <div class="testimonial_content">
             <h4>Jacob Jones</h4>
             <h5>Buffalo, NJ</h5>
@@ -261,25 +249,25 @@
           </div>
         </div>
         <div class="single_testimonial">
-          <img src="assets/images/testimonial1.jpg" alt="">
+          <img src="assets/images/t3.png" alt="">
           <div class="testimonial_content">
-            <h4>Jacob Jones</h4>
+            <h4>Arlene McCoy</h4>
             <h5>Buffalo, NJ</h5>
             <p>Sociable on as carriage my position weddings raillery consider. Peculiar trifling absolute and
               wandered.</p>
           </div>
         </div>
         <div class="single_testimonial">
-          <img src="assets/images/testimonial1.jpg" alt="">
+          <img src="assets/images/t1.png" alt="">
           <div class="testimonial_content">
-            <h4>Jacob Jones</h4>
+            <h4>Devon Lane</h4>
             <h5>Buffalo, NJ</h5>
             <p>Sociable on as carriage my position weddings raillery consider. Peculiar trifling absolute and
               wandered.</p>
           </div>
         </div>
         <div class="single_testimonial">
-          <img src="assets/images/testimonial1.jpg" alt="">
+          <img src="assets/images/t2.png" alt="">
           <div class="testimonial_content">
             <h4>Jacob Jones</h4>
             <h5>Buffalo, NJ</h5>
@@ -292,6 +280,84 @@
   </div>
 </section>
 <!-- ******************** Testimonial Area End   ******************** -->
+<!-- ******************** Order Form Area Start   ******************** -->
+<section id="order_form" class="order_form_area"
+  style="background:url(assets/images/form_bg.jpg) no-repeat center center / 100% 100%">
+  <div class="container">
+    <div class="section_title text-center">
+      <h3>অর্ডার করতে নিচের ফর্মটি পূরণ করে সাবমিট করুন !</h3>
+    </div>
+    <div class="row">
+      <div class="col-xl-5 offset-xl-1">
+        <div class="billing_details">
+          <h5>Billing Details</h5>
+          <form>
+            <div class="mb-4">
+              <input type="text" class="form-control" id="InputName" aria-describedby="nameHelp"
+                placeholder="আপনার নাম লিখুন *">
+            </div>
+            <div class="mb-4">
+              <input type="phone" class="form-control" id="InputPhone" aria-describedby="phoneHelp"
+                placeholder="আপনার মোবাইল নাম্বার লিখুন *">
+            </div>
+            <div class="mb-4">
+              <input type="text" class="form-control" id="InputAddress" aria-describedby="addressHelp"
+                placeholder="আপনার সম্পূর্ণ ঠিকানা লিখুন *">
+            </div>
+          </form>
+          <div class="payment">
+            <h4>Payment</h4>
+            <p><img src="assets/images/check_icon.svg" alt="">ক্যাশ অন ডেলিভারি</p>
+            <span>Pay with cash upon delivery.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-5 offset-xl-1">
+        <div class="order">
+          <h5>Billing Details</h5>
+          <div class="order_card">
+            <div class="order_title d-flex justify-content-between">
+              <h5>Product</h5>
+              <p>Subtotal</p>
+            </div>
+            <div class="product_name d-flex justify-content-between d-flex align-items-center">
+              <div class="product_details d-flex align-items-center">
+                <img src="assets/images/order.jpg" alt="">
+                <p>Flower Of Story Men’s <br> Perfume Set Boss</p>
+              </div>
+              <span>x1</span>
+              <p><img src="assets/images/৳.svg" alt="">1,690.00</p>
+            </div>
+            <div class="order_count">
+              <div class="d-flex justify-content-between">
+                <span>Subtotal</span>
+                <p><img src="assets/images/৳.svg" alt="">1,690.00</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span>Shopping</span>
+                <div>
+                  <p><img src="assets/images/check_icon.svg" alt="">ঢাকার মধ্যে</p>
+                  <p><img src="assets/images/uncheck.svg" alt="">ঢাকার বাহিরে</p>
+                </div>
+              </div>
+            </div>
+            <div class="order_total d-flex justify-content-between">
+              <h5>Total</h5>
+              <p><img src="assets/images/৳.svg" alt="">1,690.00</p>
+            </div>
+          </div>
+          <button class="btn btn_main">অর্ডার করুন<img src="assets/images/arrow_right.svg" alt=""></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- ******************** Order Form Area End   ******************** -->
+<!-- ******************** Footer Area Start   ******************** -->
+<footer></footer>
+<!-- ******************** Footer Area End   ******************** -->
+
 
 <body>
 

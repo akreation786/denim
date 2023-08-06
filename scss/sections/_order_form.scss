@@ -1,0 +1,225 @@
+@use "../custom" as *;
+@use "../abstracts/mixins" as *;
+
+.order_form_area {
+  padding-top: 80px;
+  @include bg;
+
+  &:before {
+    background: linear-gradient(180deg, #003B60 0%, rgba(0, 59, 96, 0.00) 100%);
+    backdrop-filter: none;
+    opacity: unset;
+  }
+
+  .section_title {
+    h3 {
+      color: $white;
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+
+  .billing_details {
+    h5 {
+      color: $white;
+      font-family: 'Manrope', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 160%;
+      /* 28.8px */
+    }
+
+    form {
+      input {
+        background: transparent;
+        border-radius: 4px;
+        border: 1px solid #FFF;
+        opacity: 0.7;
+      }
+
+      ::placeholder {
+        color: $white;
+        font-family: 'Li Ador Noirrit';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 160%;
+      }
+    }
+
+    .payment {
+      background: #fff;
+      border-radius: 26px 0px;
+      overflow: hidden;
+
+      h4 {
+        color: #080422;
+        font-family: 'Manrope', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.5;
+        padding: 24px 24px 0 24px;
+      }
+
+      P {
+        padding: 0 24px;
+
+        img {
+          margin-right: 16px;
+        }
+      }
+
+      span {
+        position: relative;
+        padding: 12px 24px;
+        background: $primary;
+        color: $white;
+        display: block;
+
+        &:before {
+          content: "";
+          width: 12px;
+          height: 12px;
+          background: $primary;
+          left: 85px;
+          top: -6px;
+          position: absolute;
+          transform: rotate(45deg)
+        }
+      }
+    }
+  }
+
+  .order {
+    h5 {
+      color: $white;
+      font-family: 'Manrope', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 160%;
+    }
+
+    .order_card {
+      border: 1px solid $white;
+      border-radius: 8px;
+
+      .order_title {
+        padding: 10px 24px;
+        border-bottom: 1px solid $white;
+
+        h5 {
+          color: #FFF;
+          font-family: 'Manrope', sans-serif;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 160%;
+          margin-bottom: 0;
+        }
+
+        p {
+          margin-bottom: 0;
+          color: $white;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 160%;
+        }
+      }
+
+      .product_name {
+        border-bottom: 1px solid $white;
+        padding: 10px 24px;
+
+        img {
+          border-radius: 5px;
+        }
+
+        p {
+          color: $white;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 160%;
+          margin-left: 12px;
+        }
+
+        span {
+          width: 10px;
+          height: 12px;
+        }
+
+        p {
+          color: $white;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 160%;
+        }
+      }
+
+      .order_count {
+        border-bottom: 1px solid $white;
+        padding: 10px 24px;
+
+        span {
+          color: $white;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 160%;
+        }
+
+        p {
+          color: $white;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 160%;
+
+          img {
+            margin-right: 12px;
+          }
+        }
+      }
+
+      .order_total {
+        padding: 10px 24px;
+
+        h5 {
+          color: $white;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.5;
+          margin-bottom: 0;
+        }
+
+        p {
+          color: $white;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 160%;
+          margin-bottom: 0;
+
+          img {
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+
+    button {
+      font-family: 'Niladri Rongtuli';
+      background: $accent;
+      color: $primary;
+      padding: 18px 45px;
+      border-radius: 38px 0px 38px 0px;
+      font-size: 25px;
+      font-weight: 400;
+      width: 100%;
+      margin-top: 30px;
+
+      &:hover {
+        border-radius: 38px 0px 38px 0px;
+      }
+
+      img {
+        margin-left: 16px;
+      }
+    }
+  }
+}

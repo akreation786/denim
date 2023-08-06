@@ -12420,16 +12420,36 @@ h6 a {
   background: #F0F9FF;
   padding-top: 470px;
   margin-top: -390px;
+  padding-bottom: 136px;
 }
 .testimonial_area .testimonial_slider .single_testimonial {
-  background: #c94343;
+  background: #fff;
   border-radius: 45px 0px;
   margin: 0px 30px;
+  margin-top: 65px;
+  margin-bottom: 60px;
+  transition-duration: 1000ms;
+  transition-property: all;
+}
+.testimonial_area .testimonial_slider .single_testimonial:hover {
+  background: #003B60;
+}
+.testimonial_area .testimonial_slider .single_testimonial:hover .testimonial_content h4,
+.testimonial_area .testimonial_slider .single_testimonial:hover .testimonial_content h5,
+.testimonial_area .testimonial_slider .single_testimonial:hover .testimonial_content p {
+  color: #fff;
+}
+.testimonial_area .testimonial_slider .single_testimonial:hover .testimonial_content h5 {
+  border-bottom: 1px dashed #F0E615;
 }
 .testimonial_area .testimonial_slider .single_testimonial img {
   width: 130px;
   height: 130px;
   margin: 0 auto;
+  margin-top: -65px;
+}
+.testimonial_area .testimonial_slider .single_testimonial .testimonial_content {
+  padding: 0px 45px 20px;
 }
 .testimonial_area .testimonial_slider .single_testimonial .testimonial_content h4 {
   color: #003B60;
@@ -12444,6 +12464,9 @@ h6 a {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+  border-bottom: 1px dashed #003B60;
+  margin-top: 20px;
+  padding-bottom: 15px;
 }
 .testimonial_area .testimonial_slider .single_testimonial .testimonial_content p {
   color: #003B60;
@@ -12465,7 +12488,7 @@ h6 a {
   border-radius: 50%;
   position: absolute;
   right: 50%;
-  margin-left: -67px;
+  margin-left: -72px;
   bottom: -57px;
   border: 1px solid #262F30;
   color: #003B60;
@@ -12487,7 +12510,7 @@ h6 a {
   border-radius: 50%;
   position: absolute;
   right: 50%;
-  margin-right: -67px;
+  margin-right: -72px;
   border: 1px solid #262F30;
   color: #003B60;
   transition-duration: 1000ms;
@@ -12496,6 +12519,204 @@ h6 a {
 .testimonial_area .testimonial_slider .next_arrow:hover {
   background: #003B60;
   color: #fff;
+}
+
+.order_form_area {
+  padding-top: 80px;
+  background-position: center !important;
+  background-size: cover !important;
+  position: relative;
+  z-index: 2;
+}
+.order_form_area:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 59, 96, 0.59);
+  backdrop-filter: blur(5px);
+  opacity: 0.65;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+.order_form_area:before {
+  background: linear-gradient(180deg, #003B60 0%, rgba(0, 59, 96, 0) 100%);
+  backdrop-filter: none;
+  opacity: unset;
+}
+.order_form_area .section_title h3 {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.order_form_area .billing_details h5 {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 160%;
+  /* 28.8px */
+}
+.order_form_area .billing_details form input {
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid #FFF;
+  opacity: 0.7;
+}
+.order_form_area .billing_details form ::placeholder {
+  color: #fff;
+  font-family: "Li Ador Noirrit";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+}
+.order_form_area .billing_details .payment {
+  background: #fff;
+  border-radius: 26px 0px;
+  overflow: hidden;
+}
+.order_form_area .billing_details .payment h4 {
+  color: #080422;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 24px 24px 0 24px;
+}
+.order_form_area .billing_details .payment P {
+  padding: 0 24px;
+}
+.order_form_area .billing_details .payment P img {
+  margin-right: 16px;
+}
+.order_form_area .billing_details .payment span {
+  position: relative;
+  padding: 12px 24px;
+  background: #003B60;
+  color: #fff;
+  display: block;
+}
+.order_form_area .billing_details .payment span:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #003B60;
+  left: 85px;
+  top: -6px;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.order_form_area .order h5 {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 160%;
+}
+.order_form_area .order .order_card {
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+.order_form_area .order .order_card .order_title {
+  padding: 10px 24px;
+  border-bottom: 1px solid #fff;
+}
+.order_form_area .order .order_card .order_title h5 {
+  color: #FFF;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 160%;
+  margin-bottom: 0;
+}
+.order_form_area .order .order_card .order_title p {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+}
+.order_form_area .order .order_card .product_name {
+  border-bottom: 1px solid #fff;
+  padding: 10px 24px;
+}
+.order_form_area .order .order_card .product_name img {
+  border-radius: 5px;
+}
+.order_form_area .order .order_card .product_name p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-left: 12px;
+}
+.order_form_area .order .order_card .product_name span {
+  width: 10px;
+  height: 12px;
+}
+.order_form_area .order .order_card .product_name p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+}
+.order_form_area .order .order_card .order_count {
+  border-bottom: 1px solid #fff;
+  padding: 10px 24px;
+}
+.order_form_area .order .order_card .order_count span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+.order_form_area .order .order_card .order_count p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+}
+.order_form_area .order .order_card .order_count p img {
+  margin-right: 12px;
+}
+.order_form_area .order .order_card .order_total {
+  padding: 10px 24px;
+}
+.order_form_area .order .order_card .order_total h5 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.order_form_area .order .order_card .order_total p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+  margin-bottom: 0;
+}
+.order_form_area .order .order_card .order_total p img {
+  margin-right: 12px;
+}
+.order_form_area .order button {
+  font-family: "Niladri Rongtuli";
+  background: #F0E615;
+  color: #003B60;
+  padding: 18px 45px;
+  border-radius: 38px 0px 38px 0px;
+  font-size: 25px;
+  font-weight: 400;
+  width: 100%;
+  margin-top: 30px;
+}
+.order_form_area .order button:hover {
+  border-radius: 38px 0px 38px 0px;
+}
+.order_form_area .order button img {
+  margin-left: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
