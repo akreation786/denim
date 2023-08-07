@@ -35,6 +35,12 @@
       line-height: 1.5;
 
     }
+  }
+
+  .desc_list {
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
 
     .desc_list_left {
       p {

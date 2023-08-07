@@ -15,6 +15,9 @@
   }
 
   .featured_list {
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
     .featured_list_left {
       p {
         color: $primary;

@@ -8,6 +8,14 @@
     margin: 0 50px;
     margin-top: -270px;
 
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      height: 194px;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
     @include bg;
 
     &:before {

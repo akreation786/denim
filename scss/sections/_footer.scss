@@ -1,0 +1,129 @@
+@use "../custom" as *;
+@use "../abstracts/mixins" as *;
+
+.footer_area {
+
+  .footer_top {
+    margin-top: -180px;
+    z-index: 4;
+    position: relative;
+    background: $primary;
+    padding: 0 45px;
+    padding-top: 45px;
+    border-radius: 50px 0px;
+
+    .usefull_link {
+      h3 {
+        color: $white;
+        font-family: 'Li Ador Noirrit';
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.5;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 0;
+
+        li {
+          list-style: none;
+
+          a {
+            color: #FFF;
+            font-family: 'Li Ador Noirrit';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .footer_logo {
+      p {
+        font-size: 24px;
+        text-transform: capitalize;
+        font-weight: 700;
+        color: $white;
+        text-align: center;
+
+        span {
+          color: $accent;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .contact_number {
+      p {
+        color: #F0E615;
+        font-family: 'Li Ador Noirrit';
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 0;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 22px;
+        }
+      }
+
+      h4 {
+        color: #F8F8F8;
+        font-size: 39.99px;
+        line-height: 1.5;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 34px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    @include bg;
+    margin-top: -60px;
+
+    &:before {
+      background: linear-gradient(0deg, #003B60 0%, rgba(0, 59, 96, 0.00) 100%);
+      backdrop-filter: none;
+      opacity: unset;
+    }
+
+    padding-top: 120px;
+    padding-bottom: 30px;
+
+    .social_links {
+      margin-bottom: 70px;
+
+      a {
+        img {
+          margin: 0px 10px;
+        }
+      }
+    }
+
+    .footer_text {
+      p {
+        color: $white;
+        font-family: 'Manrope', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 0;
+
+        a {
+          color: #FFE663;
+          font-family: 'Manrope', sans-serif;
+          font-size: 25px;
+          font-weight: 700;
+          line-height: 1.5;
+          text-decoration-line: underline;
+        }
+      }
+    }
+  }
+}

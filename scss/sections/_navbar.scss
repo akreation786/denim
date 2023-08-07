@@ -7,7 +7,40 @@
   top: 30px;
   margin-bottom: 58px;
 
+  @include media-breakpoint-down(lg) {
+    top: 10px;
+  }
+
+  @include media-breakpoint-down(md) {
+    position: static;
+    background: #8ba8c0;
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    position: static;
+    background: #8ba8c0;
+    margin-bottom: 0;
+  }
+
+
   .navbar {
+    @include media-breakpoint-down(lg) {
+      display: flex;
+      justify-content: center;
+    }
+
+    @include media-breakpoint-down(md) {
+      display: flex;
+      justify-content: center;
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: flex;
+      justify-content: center;
+    }
+
+
     a {
       font-size: 24px;
       text-transform: capitalize;
@@ -26,4 +59,6 @@
       }
     }
   }
+
+
 }

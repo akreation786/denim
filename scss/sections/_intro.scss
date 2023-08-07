@@ -4,10 +4,27 @@
 .intro_area {
   height: 940px;
 
+  @include media-breakpoint-down(lg) {
+    height: auto;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: auto;
+  }
+
   .intro {
     margin-top: 57px;
 
     .intro_left {
+      @include media-breakpoint-down(lg) {
+        margin-top: 70px;
+        text-align: center;
+      }
+
+      @include media-breakpoint-down(sm) {
+        text-align: center;
+      }
+
       >span {
         font-family: 'Li Ador Noirrit';
         font-size: 24px;
@@ -16,6 +33,12 @@
         padding: 10px 29px;
         border-radius: 38px 0px;
         color: $white;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 20px;
+        }
+
+
       }
 
       h2 {
@@ -24,9 +47,22 @@
         font-weight: 400;
         line-height: 1.2;
         margin: 42px 0;
+
+        @include media-breakpoint-down(lg) {
+          text-align: center;
+        }
+
+        @include media-breakpoint-down(sm) {
+          font-size: 36px;
+          margin: 18px 0;
+        }
       }
 
       .intro_price {
+        @include media-breakpoint-down(lg) {
+          display: inline-block;
+        }
+
         h4 {
           font-family: 'Li Ador Noirrit';
           font-size: 24px;
@@ -63,6 +99,14 @@
         font-size: 25px;
         font-weight: 400;
 
+        @include media-breakpoint-down(lg) {
+          margin-left: 20px;
+        }
+
+        @include media-breakpoint-down(md) {
+          margin-left: 20px;
+        }
+
         img {
           margin-left: 16px;
         }
@@ -75,6 +119,11 @@
         font-family: 'Li Ador Noirrit';
         line-height: 1.5;
         margin-top: 65px;
+
+        @include media-breakpoint-down(sm) {
+          margin-top: 18px;
+        }
+
       }
     }
 
@@ -92,11 +141,31 @@
           padding-right: 0;
           padding-left: 30px;
           padding-bottom: 0px;
+
+          @include media-breakpoint-down(xl) {
+            padding-left: 30px;
+          }
+
+          @include media-breakpoint-down(lg) {
+            padding-left: 0px;
+          }
+
+          @include media-breakpoint-down(sm) {
+            width: 100%;
+          }
+
+          // @include media-breakpoint-up(md) {
+          //   width: 100%;
+          // }
         }
       }
 
       .intro_right_phone {
         text-align: center;
+
+        @include media-breakpoint-down(lg) {
+          text-align: center;
+        }
 
         button {
           font-family: 'Niladri Rongtuli';
@@ -107,6 +176,19 @@
           font-weight: 300;
           font-size: 50px;
           margin-top: 0;
+
+          @include media-breakpoint-up(lg) {
+            font-size: 32px;
+          }
+
+          @include media-breakpoint-down(sm) {
+            padding: 12px 20px;
+            font-size: 38px;
+          }
+
+          // @include media-breakpoint-up(md) {
+          //   font-size: 54px;
+          // }
 
           img {
             margin-right: 16px;
@@ -123,6 +205,15 @@
           color: #fff;
           display: inline-block;
           margin-left: -150px;
+
+          @include media-breakpoint-down(lg) {
+            margin-left: 0;
+          }
+
+          @include media-breakpoint-down(sm) {
+            margin-left: 0;
+            font-size: 30px;
+          }
         }
       }
     }
